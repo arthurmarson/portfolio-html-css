@@ -40,7 +40,7 @@ body {
     text-decoration: none;
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 600;
 }
 
@@ -49,22 +49,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 34px;
+    font-size: 2.125rem;
     font-family: var(--fonte-primaria);
 }
 
 .apresentacao__conteudo__titulo__about{
-    font-size: 34px;
+    font-size: 2.125rem;
     font-family: var(--fonte-primaria);
     text-decoration: underline;
 }
@@ -74,12 +75,12 @@ body {
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__conteudo__texto__about{
-    font-size: 20.5px;
+    font-size: 1.28125rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -94,19 +95,19 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 17px;
-    font-size: 22px;
+    font-size: 1.375rem;
     padding: 14px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -114,19 +115,14 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cor-hover);
     color: white;
 
 }
 
 .imagem__perfil {
-    width: 400px;
-    border-radius: 17px;
-}
-
-.imagem__perfil__about {
-    width: 400px;
+    width: 40%;
     border-radius: 17px;
 }
 
@@ -136,6 +132,36 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 12%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .email__perfil {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagem__perfil {
+        width: 40%;
+        border-radius: 17px;
+    }
 }
