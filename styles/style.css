@@ -82,7 +82,6 @@ li {
 .apresentacao__conteudo__titulo__about{
     font-size: 2.125rem;
     font-family: var(--fonte-primaria);
-    text-decoration: underline;
 }
 
 .apresentacao__conteudo__titulo__curriculo { 
@@ -192,7 +191,7 @@ li {
     }
 
     .imagem__perfil {
-        width: 50%;
+        width: 75%;
         border-radius: 17px;
     }
 
