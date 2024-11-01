@@ -126,6 +126,11 @@ body {
     border-radius: 17px;
 }
 
+.imagem__perfil__email {
+    width: 28vw;
+    border-radius: 17px;
+}
+
 .rodape {
     padding: 24px;
     color: black;
@@ -147,7 +152,7 @@ body {
 
     .apresentacao {
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 10%;
     }
 
     .apresentacao__conteudo {
@@ -161,7 +166,12 @@ body {
     }
 
     .imagem__perfil {
-        width: 40%;
+        width: 50%;
+        border-radius: 17px;
+    }
+
+    .imagem__perfil__email {
+        width: 65vw;
         border-radius: 17px;
     }
 }
